@@ -164,24 +164,19 @@
                "entity.name.type",
                "entity.other",
                "entity.other.attribute-name",
-
                "entity.other.inherited-class",
                "entity.name.type.class",
-               
                "meta.object-literal.key",
                "variable.other.constant.property",
                "entity.name.type.namespace",
                "entity.name.variable.local.cs",
-
                "meta.function-call.generic.python",
                 "entity.name.namespace.cpp
                 meta.using-namespace.cpp
-                source.cpp",
-
-               "support.type.python",
-
-               "punctuation.definition.heading.markdown",
-               "entity.name.section.markdown"
+                source.cpp","support.type.python","punctuation.definition.heading.markdown","entity.name.section.markdown",
+               // other
+               "entity.other.attribute-name.id",
+               "entity.other.attribute-name.class.css"
             ],
             "settings": {
                // old ffc66d
@@ -220,7 +215,6 @@
                "keyword.operator.assignment.cpp",
                "keyword.operator.comparison.cpp",
                "keyword.operator.increment.cpp",
-
                // "keyword.operator"
             ],
             "settings": {
@@ -286,17 +280,16 @@
                "punctuation.definition.template-expression.begin",
                "punctuation.definition.template-expression.end",
                "support.type.property-name.json punctuation",
-
                // "punctuation.definition.dictionary.begin.json.comments",
                // "punctuation.definition.dictionary.end.json.comments"
-
                "punctuation.definition.block.js",
                "meta.brace.round.js",
                "meta.brace.square.js",
                "punctuation.accessor.js",
                "punctuation.definition.parameters.begin.js",
                "punctuation.definition.parameters.end.js",
-               "punctuation.definition.section.case-statement.js"
+               "punctuation.definition.section.case-statement.js",
+               // "punctuation.definition.string.end.html",
             ],
             "settings": {
                "foreground": "#fff"
@@ -305,9 +298,25 @@
          },
          {
             "scope": [
+               // taken from scope [variable]
+               "source.js",
+               "meta.selector"
+               // "punctuation.definition.constant"
+            ],
+            "settings": {
+               // old cc8242
+               // pink f6f
+               "foreground": "#fff"
+               // "fontStyle": "bold"
+            }
+         },
+         {
+            "scope": [
                "storage",
                "storage.modifier",
-               "storage.type"
+               "storage.type",
+               "keyword.other.unit",
+               "punctuation.definition.constant"
             ],
             "settings": {
                // old cc8242
@@ -318,13 +327,16 @@
          },
          {
             "scope": [
+               // taken from punctuation
+               // "punctuation.definition.string.begin",
+               // "punctuation.definition.string.end",
                "string",
                "string.interpolated",
                "string.other",
                "string.quoted",
                "string.quoted.double",
                "string.quoted.other",
-               "string.quoted.single",
+               // "string.quoted.single",
                "string.quoted.triple",
                "string.regexp",
                "string.unquoted"
@@ -360,7 +372,8 @@
                "support.type.primitive.ts",
                "support.type.builtin.ts",
                "support.type.object.module",
-               "support.variable.magic.python"
+               "support.variable.magic.python",
+               // ""
             ],
             "settings": {
                // old 7a9ec2
@@ -390,9 +403,8 @@
                // could be purple look below at variable scope (child)
                "variable.parameter.function.language.special.self.python",
                "variable.other.object.js",
-               "source.js",
+               // "source.js",
                "source.python",
-
                // taken from entity
                // "entity.other.inherited-class",
                // "entity.name.type.class",
@@ -407,6 +419,9 @@
                "variable.other",
                // commented above taken from variable (original parent)
                // "variable.parameter.function.language.special.self.python"
+               "support.constant.property-value.css",
+               "support.constant.color.w3c-standard-color-name.css",
+               "support.constant.font-name"
             ],
             "settings": {
                // old 9e7bb0
@@ -434,5 +449,9 @@
       "editor.defaultFormatter": "csharpier.csharpier-vscode"
    },
    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-   "window.commandCenter": false
+   // "terminal.integrated.shellIntegration.enabled": false,
+   // "window.commandCenter": false,
+   "window.titleBarStyle": "custom",
+   "window.customTitleBarVisibility": "windowed",
+   "window.menuBarVisibility": "visible",
 }
