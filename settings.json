@@ -63,6 +63,9 @@
       "editorBracketHighlight.unexpectedBracket.foreground": "#ff6969",
       "panel.border": "#2c313a",
    },
+   // theme json
+   // bright accent a4f
+   // light accent  82d
    "editor.renderLineHighlight": "gutter",
    "editor.tokenColorCustomizations": {
       "textMateRules": [
@@ -79,6 +82,20 @@
                // "fontStyle": "bold"
             }
          },
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
+         // STARTS HERE
          {
             "scope": [
                "constant"
@@ -86,7 +103,12 @@
             "settings": {
                // old ffc66d
                // pink 46e
+               
+               // HERE
+               // "foreground": "#aaf"
+               // 6af above prev
                "foreground": "#7a9ec2"
+               // "foreground": "#EBCB8B"
                // "fontStyle": "bold"
             }
          },
@@ -102,7 +124,11 @@
             "settings": {
                // old 7a9ec2
                // pink 89e
+               
+               // HERE
+               // "foreground": "#aaf"
                "foreground": "#7a9ec2"
+               // "foreground": "#EBCB8B"
                // "fontStyle": "bold"
             }
          },
@@ -129,25 +155,11 @@
             "settings": {
                // old cc8242
                // pink 46e
+               
+               // HERE
+               // "foreground": "#66f"
                "foreground": "#cc8242"
-               // "fontStyle": "bold"
-            }
-         },
-         {
-            "scope": [
-               "constant.character.entity"
-            ],
-            "settings": {
-               "foreground": "#ff6969"
-               // "fontStyle": "bold"
-            }
-         },
-         {
-            "scope": [
-               "emphasis"
-            ],
-            "settings": {
-               "foreground": "#f66"
+               // "foreground": "#B48EAD"
                // "fontStyle": "bold"
             }
          },
@@ -166,7 +178,9 @@
                "entity.other.attribute-name",
                "entity.other.inherited-class",
                "entity.name.type.class",
-               "meta.object-literal.key",
+
+               // UNCOMMENT HERE TO RETURN TO DARCULA
+               // "meta.object-literal.key",
                "variable.other.constant.property",
                "entity.name.type.namespace",
                "entity.name.variable.local.cs",
@@ -182,8 +196,155 @@
                // old ffc66d
                // pink eaf
                // "foreground": "#f00"
+               
+               // HERE
+               // "foreground": "#faf"
                "foreground": "#ffc66d"
+               // "foreground": "#88C0D0"
                // "fontStyle": "bold"
+            }
+         },
+         {
+            "scope": [
+               "storage",
+               "storage.modifier",
+               "storage.type",
+               "keyword.other.unit",
+               "punctuation.definition.constant"
+            ],
+            "settings": {
+               // old cc8242
+               // pink f6f
+               
+               // HERE
+               // "foreground": "#f6f"
+               "foreground": "#cc8242"
+               // "foreground": "#B48EAD"
+               // "fontStyle": "bold"
+            }
+         },
+         {
+            "scope": [
+               // taken from punctuation
+               // "punctuation.definition.string.begin",
+               // "punctuation.definition.string.end",
+               "string",
+               "string.interpolated",
+               "string.other",
+               "string.quoted",
+               "string.quoted.double",
+               "string.quoted.other",
+               // "string.quoted.single",
+               "string.quoted.triple",
+               "string.regexp",
+               "string.unquoted"
+            ],
+            "settings": {
+               // old 6a8759
+               // "foreground": "#9a9a9a"
+               
+               // HERE
+               // "foreground": "#ccc"
+               // 6af above prev
+               "foreground": "#6a8759"
+               // "foreground": "#A3BE8C"
+               // "fontStyle": "bold"
+            }
+         },
+         {
+            "scope": [
+               "variable.other",
+               // commented above taken from variable (original parent)
+               // "variable.parameter.function.language.special.self.python"
+
+               // css stuff not related to JS
+               "support.constant.property-value.css",
+               "support.constant.color.w3c-standard-color-name.css",
+               "support.constant.font-name"
+            ],
+            "settings": {
+               // old 9e7bb0
+               // pink eaf
+
+               // HERE
+               // "foreground": "#aaf"
+               "foreground": "#9e7bb0"
+               // "foreground": "#5E81AC"
+               // "fontStyle": "bold"
+            }
+         },
+         {
+            "scope": [
+               "support",
+               "support.class",
+               "support.constant",
+               "support.function",
+               "support.other",
+               "support.type",
+               "support.type.property-name",
+               "support.variable",
+               "support.type.property-name.json",
+               "support.variable.property",
+               "support.type.primitive.ts",
+               "support.type.builtin.ts",
+               "support.type.object.module",
+               "support.variable.magic.python",
+               // ""
+            ],
+            "settings": {
+               // old 7a9ec2
+               // pink 89e
+               
+               // HERE
+               // "foreground": "#66f"
+               "foreground": "#7a9ec2"
+               // "foreground": "#5E81AC"
+               // "fontStyle": "bold"
+            }
+         },
+         // wasnt originally here
+         // remove this to & uncomment above to revert to darcula
+         {
+            "scope": [
+               "meta.object-literal.key",
+            ],
+            "settings": {
+               "foreground": "#9e7bb0",
+               // "foreground": "#5E81AC",
+               // "fontStyle": "bold"
+            }
+         },
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         // ENDS HERE
+         {
+            "scope": [
+               "constant.character.entity"
+            ],
+            "settings": {
+               "foreground": "#f66",
+               "fontStyle": "bold"
+            }
+         },
+         {
+            "scope": [
+               "emphasis"
+            ],
+            "settings": {
+               "foreground": "#f66",
+               "fontStyle": "bold"
             }
          },
          {
@@ -193,8 +354,8 @@
                "invalid.illegal"
             ],
             "settings": {
-               "foreground": "#f66"
-               // "fontStyle": "bold"
+               "foreground": "#f66",
+               "fontStyle": "bold"
             }
          },
          {
@@ -312,44 +473,6 @@
          },
          {
             "scope": [
-               "storage",
-               "storage.modifier",
-               "storage.type",
-               "keyword.other.unit",
-               "punctuation.definition.constant"
-            ],
-            "settings": {
-               // old cc8242
-               // pink f6f
-               "foreground": "#cc8242"
-               // "fontStyle": "bold"
-            }
-         },
-         {
-            "scope": [
-               // taken from punctuation
-               // "punctuation.definition.string.begin",
-               // "punctuation.definition.string.end",
-               "string",
-               "string.interpolated",
-               "string.other",
-               "string.quoted",
-               "string.quoted.double",
-               "string.quoted.other",
-               // "string.quoted.single",
-               "string.quoted.triple",
-               "string.regexp",
-               "string.unquoted"
-            ],
-            "settings": {
-               // old 6a8759
-               // "foreground": "#9a9a9a"
-               "foreground": "#6a8759"
-               // "fontStyle": "bold"
-            }
-         },
-         {
-            "scope": [
                "strong"
             ],
             "settings": {
@@ -359,35 +482,10 @@
          },
          {
             "scope": [
-               "support",
-               "support.class",
-               "support.constant",
-               "support.function",
-               "support.other",
-               "support.type",
-               "support.type.property-name",
-               "support.variable",
-               "support.type.property-name.json",
-               "support.variable.property",
-               "support.type.primitive.ts",
-               "support.type.builtin.ts",
-               "support.type.object.module",
-               "support.variable.magic.python",
-               // ""
-            ],
-            "settings": {
-               // old 7a9ec2
-               // pink 89e
-               "foreground": "#7a9ec2"
-               // "fontStyle": "bold"
-            }
-         },
-         {
-            "scope": [
                "text.html.derivative"
             ],
             "settings": {
-               "foreground": "#ffffff",
+               "foreground": "#fff",
                // "fontStyle": "bold"
             }
          }
@@ -411,22 +509,6 @@
             ],
             "settings": {
                "foreground": "#ccc"
-               // "fontStyle": "bold"
-            }
-         },
-         {
-            "scope": [
-               "variable.other",
-               // commented above taken from variable (original parent)
-               // "variable.parameter.function.language.special.self.python"
-               "support.constant.property-value.css",
-               "support.constant.color.w3c-standard-color-name.css",
-               "support.constant.font-name"
-            ],
-            "settings": {
-               // old 9e7bb0
-               // pink eaf
-               "foreground": "#9e7bb0"
                // "fontStyle": "bold"
             }
          },
